@@ -1,0 +1,107 @@
+/* MAIN */
+.faq-main {
+  padding: 100px 0;
+  background:#F6F9FC;
+}
+
+/* HEADER */
+.faq-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.faq-header h2 {
+  font-size: 48px;
+  font-family: 'Fraunces';
+  margin-bottom: 10px;
+}
+
+.faq-header p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* FAQ LIST */
+.faq-list {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 35px;
+}
+
+.faq-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* CTA */
+.faq-cta {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.faq-cta h3 {
+  font-size: 28px;
+  font-family: 'Fraunces';
+  margin-bottom: 10px;
+}
+
+.faq-cta p {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+.faq-cta button {
+  background: transparent;
+  border: 1px solid #ccc;
+  padding: 8px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.faq-cta button:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* =========================
+   📱 TABLET
+========================= */
+@media (max-width: 992px) {
+  .faq-header h2 {
+    font-size: 36px;
+  }
+}
+
+/* =========================
+   📱 MOBILE
+========================= */
+@media (max-width: 768px) {
+  .faq-main {
+    padding: 70px 20px;
+  }
+
+  .faq-header h2 {
+    font-size: 28px;
+  }
+
+  .faq-item h4 {
+    font-size: 16px;
+  }
+
+  .faq-item p {
+    font-size: 13px;
+  }
+}

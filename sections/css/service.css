@@ -1,0 +1,79 @@
+/* BACKGROUND */
+.service-main {
+  background: #F6F9FC;
+}
+
+/* TITLE */
+.service-title {
+  font-size: 18px;
+  font-family: 'Fraunces';
+  font-weight: 600;
+  color: #6c8ea4; /* soft blue-grey */
+}
+
+.service-text {
+  font-family: 'Fraunces';
+  position: relative;
+  top: -0.5cm;
+  font-size: 42px;
+  color: #0f172a; /* deep premium dark */
+}
+
+.service-para {
+  position: relative;
+  top: -1cm;
+  color: #64748b;
+  font-size: 15px;
+}
+
+/* CARD */
+.service-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+  padding: 20px;
+}
+
+/* HOVER EFFECT (premium feel) */
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+/* IMAGE */
+.service-img {
+  max-width: 300px;
+  height:200px; 
+  margin: 20px auto;
+}
+
+/* CARD TEXT */
+.card-title {
+  font-family: 'Fraunces';
+  font-size: 20px;
+  color: #0f172a;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* BUTTON */
+.header-book-btn {
+  background: transparent;
+  border: 1px solid #0ea5a4;
+  color: #0ea5a4;
+  padding: 8px 18px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.header-book-btn:hover {
+  background: #0ea5a4;
+  color: #fff;
+}

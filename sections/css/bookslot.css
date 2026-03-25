@@ -1,0 +1,76 @@
+.book-main {
+  padding: 100px 0;
+  background: #F6F9FC;
+}
+
+.book-card {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.book-card h2 {
+  text-align: center;
+  font-family: 'Fraunces';
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.book-card p {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+/* INPUTS */
+.book-card input,
+.book-card select,
+.book-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.book-card input:focus,
+.book-card select:focus,
+.book-card textarea:focus {
+  border-color: #3E71C4;
+}
+
+/* BUTTON */
+.book-card button {
+  background: #3E71C4;
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.book-card button:hover {
+  background: #2f5fa8;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .book-main {
+    padding: 60px 20px;
+  }
+
+  .book-card {
+    padding: 25px;
+  }
+
+  .book-card h2 {
+    font-size: 28px;
+  }
+}

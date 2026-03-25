@@ -1,0 +1,312 @@
+/* MAIN BACKGROUND (match hero softness) */
+.why-main {
+  padding: 10px 0;
+  background: white;
+}
+
+/* ROW */
+.why-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 120px;
+  gap: 80px;
+}
+
+.why-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* IMAGE */
+.why-img {
+  flex: 1;
+}
+
+.why-img img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0px 20px 50px rgba(0,0,0,0.08);
+  transition: 0.4s;
+}
+
+/* subtle hover (like hero feel) */
+.why-img img:hover {
+  transform: scale(1.03);
+}
+
+/* CONTENT */
+.why-content {
+  flex: 1;
+}
+
+/* TAG */
+.why-tag {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(62, 113, 196); /* match hero button color */
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* TITLE (match hero typography) */
+.why-title {
+  font-size: 48px;
+  font-weight: 600;
+  font-family: 'Fraunces';
+  line-height: 55px;
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+/* DESCRIPTION */
+.why-desc {
+  font-size: 15px;
+  color: #64748b;
+  margin-bottom: 30px;
+  line-height: 1.7;
+  max-width: 500px;
+}
+
+/* BUTTON */
+.why-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* PRIMARY BUTTON (match hero) */
+.why-btn button {
+  background: rgb(62, 113, 196);
+  color: white;
+  border: none;
+  padding: 8px 28px;
+  border-radius: 30px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.why-btn button:hover {
+  background: #2f5fa8;
+}
+
+/* ARROW TEXT */
+.why-btn span {
+  font-size: 14px;
+  cursor: pointer;
+  color: #0f172a;
+  transition: 0.3s;
+}
+
+.why-btn span:hover {
+  transform: translateX(5px);
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 992px) {
+  .why-row {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom:50px; 
+  }
+
+  .why-row.reverse {
+    flex-direction: column;
+  }
+
+  .why-img img {
+    height: 300px;
+  }
+
+  .why-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+/* BACKGROUND */
+.results-main {
+  position: relative;
+  background: url("../images/your-bg.jpg") center/cover no-repeat;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+/* DARK OVERLAY */
+.results-main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  
+}
+
+/* CONTENT */
+.results-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+/* LEFT */
+.results-left h2 {
+  font-size: 60px;
+  font-family: 'Fraunces';
+  line-height: 65px;
+}
+
+.results-tag {
+  font-size: 12px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* RIGHT */
+.results-right {
+  max-width: 500px;
+}
+
+.results-right p {
+  font-size: 15px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+/* BUTTON */
+.results-btn {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+}
+
+.results-btn button {
+  background: transparent;
+  border: 1px solid #000000;
+  padding: 8px 25px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.results-btn button:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* COUNTERS */
+.results-stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.results-stats h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.results-stats p {
+  font-size: 13px;
+  opacity: 0.7;
+}
+/* =========================
+   📱 TABLET (≤ 992px)
+========================= */
+@media (max-width: 992px) {
+    .why-main{
+        padding:40px; 
+    }
+  .results-main {
+    height: auto;
+    padding: 80px 20px;
+  }
+
+  .results-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .results-left h2 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  .results-right {
+    max-width: 100%;
+  }
+
+  .results-stats {
+    justify-content: center ;
+    gap:30px; 
+  }
+
+  .results-stats h3 {
+    font-size: 32px;
+  }
+}
+
+
+/* =========================
+   📱 MOBILE (≤ 768px)
+========================= */
+@media (max-width: 768px) {
+    .why-main{
+        padding:40px 0px; 
+    }
+  .results-left h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .results-right p {
+    font-size: 14px;
+  }
+
+  .results-btn button {
+    padding: 6px 18px;
+    font-size: 13px;
+  }
+
+  .results-stats {
+    gap: 20px;
+  }
+
+  .results-stats h3 {
+    font-size: 28px;
+  }
+}
+
+
+/* =========================
+   📱 SMALL MOBILE (≤ 480px)
+========================= */
+@media (max-width: 480px) {
+  .results-main {
+    padding: 60px 15px;
+  }
+
+  .results-left h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .results-tag {
+    font-size: 10px;
+  }
+
+  .results-right p {
+    font-size: 13px;
+  }
+
+  .results-stats h3 {
+    font-size: 24px;
+  }
+
+  .results-stats p {
+    font-size: 12px;
+  }
+}
