@@ -1,11 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../css/testimonial.css";
+import { Carousel } from "bootstrap";
 
-import c1 from '../../images/client1.png'
-import c2 from '../../images/client2.png'
-import c3 from '../../images/client3.png'
+import c1 from '../../images/client1.png';
+import c2 from '../../images/client2.png';
+import c3 from '../../images/client3.png';
 
 export const Testimonial = () => {
+
+  useEffect(() => {
+    const el = document.querySelector('#reviewCarousel');
+
+    let carouselInstance;
+
+    if (el) {
+      carouselInstance = new Carousel(el, {
+        interval: 3000,
+        ride: 'carousel',
+        pause: false,
+        wrap: true
+      });
+    }
+
+    // ✅ cleanup (important)
+    return () => {
+      if (carouselInstance) {
+        carouselInstance.dispose();
+      }
+    };
+  }, []);
+
   const reviews = [
     {
       text: `"I came in nervous and left feeling like myself again. The team made me feel heard and cared for every step of the way."`,
@@ -26,17 +50,14 @@ export const Testimonial = () => {
       img: c2
     },
   ];
-   
+
   return (
     <div className="review-main" id="testimonial">
       <div className="container">
 
         <div
           id="reviewCarousel"
-          className="carousel-fade"
-          data-bs-ride="carousel"
-          data-bs-interval={3000}
-          data-bs-pause="false"
+          className="carousel slide carousel-fade"
         >
           <div className="carousel-inner">
 
@@ -65,8 +86,6 @@ export const Testimonial = () => {
                         <h6>{item.name}</h6>
                         <span>{item.role}</span>
                       </div>
-
-                     
                     </div>
                   </div>
 
@@ -75,6 +94,9 @@ export const Testimonial = () => {
             ))}
 
           </div>
+
+         
+
         </div>
 
       </div>
