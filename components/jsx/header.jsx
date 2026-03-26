@@ -31,7 +31,7 @@ export const Header = () => {
           <div className={`collapse navbar-collapse header-menu ${menuOpen ? "show" : ""}`}>
             
             <div className="navbar-nav header-middle">
-              <a href="/home" className="nav-link nav-link-custom">Home</a>
+              <a href="/" className="nav-link nav-link-custom">Home</a>
               <a href="#service" className="nav-link nav-link-custom">Services</a>
               <a href="#about" className="nav-link nav-link-custom">About</a>
               <a href="#testimonial" className="nav-link nav-link-custom">Testimonial</a>
