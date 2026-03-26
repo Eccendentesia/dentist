@@ -30,6 +30,76 @@
   font-family: 'MonteCarlo';
   font-size: 30px;
 }
+.footer-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+/* ICON SIZE */
+.footer-icons svg {
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+/* BRAND COLORS */
+.footer-icons a:nth-child(1) svg {
+  color: #1877F2; /* Facebook */
+}
+
+.footer-icons a:nth-child(2) svg {
+  color: #E4405F; /* Instagram */
+}
+
+.footer-icons a:nth-child(3) svg {
+  color: #1DA1F2; /* Twitter */
+}
+
+.footer-icons a:nth-child(4) svg {
+  color: #0A66C2; /* LinkedIn */
+}
+
+.footer-icons a:nth-child(5) svg {
+  color: #FF0000; /* YouTube */
+}
+
+/* HOVER EFFECT */
+.footer-icons a:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* OPTIONAL: glow effect on hover */
+.footer-icons a:nth-child(1):hover {
+  box-shadow: 0 0 15px #1877F2;
+}
+
+.footer-icons a:nth-child(2):hover {
+  box-shadow: 0 0 15px #E4405F;
+}
+
+.footer-icons a:nth-child(3):hover {
+  box-shadow: 0 0 15px #1DA1F2;
+}
+
+.footer-icons a:nth-child(4):hover {
+  box-shadow: 0 0 15px #0A66C2;
+}
+
+.footer-icons a:nth-child(5):hover {
+  box-shadow: 0 0 15px #FF0000;
+}
 
 /* NEWSLETTER */
 .newsletter p {

@@ -35,7 +35,7 @@ export const Testimonial = () => {
           id="reviewCarousel"
           className="carousel-fade"
           data-bs-ride="carousel"
-          data-bs-interval="3000"
+          data-bs-interval={3000}
           data-bs-pause="false"
         >
           <div className="carousel-inner">
@@ -73,7 +73,7 @@ export const Testimonial = () => {
                 </div>
               </div>
             ))}
-       
+
           </div>
         </div>
 

@@ -1,7 +1,13 @@
 import React from "react";
 import "../css/footer.css";
 import logo from '../../images/logo.png'
-
+import { 
+  FaFacebookF, 
+  FaInstagram, 
+  FaTwitter, 
+  FaLinkedinIn, 
+  FaYoutube 
+} from "react-icons/fa";
 export const Footer = () => {
   return (
     <footer className="footer-main">
@@ -72,13 +78,13 @@ export const Footer = () => {
           <span>Cookie Settings</span>
         </div>
 
-        <div className="footer-icons">
-          <span>f</span>
-          <span>ig</span>
-          <span>x</span>
-          <span>in</span>
-          <span>yt</span>
-        </div>
+       <div className="footer-icons">
+  <a href="#"><FaFacebookF /></a>
+  <a href="#"><FaInstagram /></a>
+  <a href="#"><FaTwitter /></a>
+  <a href="#"><FaLinkedinIn /></a>
+  <a href="#"><FaYoutube /></a>
+</div>
       </div>
 
     </footer>
