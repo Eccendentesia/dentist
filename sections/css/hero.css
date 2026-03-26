@@ -87,4 +87,8 @@ border-radius:30px;
     width: 90%;
     height: auto;
   }
+  .img-center{
+    position:relative; 
+    left:45%; 
+  }
 }
